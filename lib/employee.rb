@@ -1,3 +1,6 @@
-class Employee < ActiveRecord::Base
+require 'faker'
 
+class Employee < ActiveRecord::Base
+  belongs_to :store
 end
+
