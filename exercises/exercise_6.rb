@@ -11,9 +11,9 @@ puts "----------"
 
 # Your code goes here ...
 10.times do
-  @store1.employees.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, hourly_rate: rand(15..100))
+  @store1.employees.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, hourly_rate: rand(40..200))
 end
 
 10.times do
-  @store2.employees.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, hourly_rate: rand(15..100))
+  @store2.employees.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, hourly_rate: rand(40..200))
 end

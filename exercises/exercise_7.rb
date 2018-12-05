@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Gimme a store name! \n >"
+answer = gets.chomp
+test = Store.create(name: answer)
+puts test.errors[:name]
+puts test.errors[:annual_revenue]
